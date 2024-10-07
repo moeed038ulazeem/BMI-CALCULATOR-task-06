@@ -19,7 +19,7 @@ function calculateBMI() {
     
     // Determine BMI category
     let category = "";
-    if (bmi < ) {
+    if (bmi < 18.5) {
         category = "Underweight";
     } else if (bmi < 24.9) {
         category = "Normal weight";
