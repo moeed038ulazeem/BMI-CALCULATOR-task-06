@@ -1,10 +1,12 @@
-// Function to calculate BMI
+//BMI FUNCTION 
+
 function calculateBMI() {
-    // Get input values
+   
+    // GET INPUT VALUES FROM USER
     const weight = parseFloat(document.getElementById("weight").value);
     const height = parseFloat(document.getElementById("height").value);
     
-    // Validate inputs
+    // VALIDATION CHECKER
     if (!weight || weight <= 0) {
         alert("Please enter a valid weight.");
         return;
@@ -14,11 +16,11 @@ function calculateBMI() {
         return;
     }
 
-    // Calculate BMI
+    // BMI CALCULATOR
     const bmi = (weight / (height * height)).toFixed(2);
     
-    // Determine BMI category
-    let category = "";
+    // BMI CATEGAROIS
+    var category = "";
     if (bmi < 18.5) {
         category = "Underweight";
     } else if (bmi < 24.9) {
@@ -29,9 +31,13 @@ function calculateBMI() {
         category = "Obesity";
     }
     
-    // Display result
+    // RESULT 
     document.getElementById("result").innerText = `Your BMI is ${bmi}. Category: ${category}`;
 }
 
-// Add event listener to the button
+// ADDING EVENT LISTNER TO BUTTON
 document.getElementById("calculateBtn").addEventListener("click", calculateBMI);
+
+
+
+
