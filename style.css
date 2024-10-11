@@ -1,8 +1,17 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(46, 86, 140);
+    /* background-color: rgb(46, 86, 140); */
+    background-image: url('./stethoscope-7664838_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
     margin: 0;
     padding: 20px;
+    
 }
 
 .container {
@@ -42,10 +51,10 @@ input {
 button {
     width: 150px;
     padding: 10px;
-    background-color: rgb(30, 89, 166);
+    background-color: blue;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     /* justify-items: center; */
     /* justify-content: center; */
